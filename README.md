@@ -1,10 +1,11 @@
 # Gradient descent of 2 argument function z=f(x,y)
 The gradient vector is a vector that points in the direction of the steepest increase of a function at a given point. Gradient descent is an 
-optimization algorithm that iteratively moves towards the minimum of a function by taking steps proportional to the negative of the gradient at the 
-current point. It is used in various fields like: machine learning, deep learning, computer vision, pysics simulations and so on.
+optimization algorithm that iteratively moves towards the minimum of a function by taking steps proportional to the negative of the gradient 
+(antigradient) at the current point. It is used in various fields like: machine learning, deep learning, computer vision, physics simulations and so on.
 
 Gradient descent visually:
-<img src="https://github.com/ttcpavle/Gradient-descent-of-2-argument-function/assets/159661698/5e2b4374-ab35-4d6e-98a7-91fcbd74f683" alt="Gradient descent" style="width: 30%;">
+
+<img src="https://github.com/ttcpavle/Gradient-descent-of-2-argument-function/assets/159661698/5e2b4374-ab35-4d6e-98a7-91fcbd74f683" alt="Gradient descent" style="width: 50%;">
 
 There are more efficient and effective ways to find local minimum of a function like Stochastic Gradient Descent, Mini-batch Gradient Descent,
 Newton's Method, Conjugate Gradient Method... so this is only just for understanding a concept of gradient descent.
