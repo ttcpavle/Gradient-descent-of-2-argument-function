@@ -7,7 +7,8 @@ This is a simple script for finding local minimum of a 2 argument function z=f(x
 MinimumCalculator uses constant size step vectors while MinimumCalculator2 uses anti-gradient vector itself.
 The second one works better (in my example) since it breaks from loop after smaller number of iterations and the closer 
 it gets to minimum, the more precise is estimation. With constant step size an oscillation around minimum is likely to occur.
-NOTE: local minimum cannot be found from all points. 
+NOTE: Calculated point is a stationary point that is candidate for local minimum. If you want to check if it is actually minimum, you have to
+calculate Hessian matrix determinant and examine cases. So the point calculated may not be an actual local minimum. Function also may be flat.
 DATE:   24.3.2024
 AUTHOR: Pavle Totic
 =============================================================================================
