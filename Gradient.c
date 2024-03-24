@@ -21,14 +21,14 @@ double f(double x, double y);
 double df_dx(double x, double y, double h);
 double df_dy(double x, double y, double h);
 void antigrad(double pdx, double pdy, double* antigradient);
-double Intensity(double* antigradient);
+double Intensity(double* vector);
 void Step(double* antigradient, double* stepvector);
 void MinimumCalculator(double x, double y, double* antigradient, double* stepvector, double* minimum, double h);
 void MinimumCalculator2(double x, double y, double* antigradient, double* minimum, double h);
 
 //2 argument function f(x,y)
 double f(double x, double y) {
-    return x * y;
+    return sin(5*x) * cos(5*y) / 5;
 }
 //Example functions:
 // x*x+y*y
