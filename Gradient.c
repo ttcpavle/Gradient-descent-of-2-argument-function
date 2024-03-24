@@ -36,7 +36,7 @@ double f(double x, double y) {
 // x*x+y*y
 //sin(5*x) * cos(5*y) / 5
 //pow(x, 2) + pow(y, 2) + 2
-//x*y (works for x=1, y=1)
+//x*log(x*x+y*y)
 
 //partial derivative x
 double df_dx(double x, double y, double h) {
@@ -114,7 +114,7 @@ void MinimumCalculator2(double x, double y, double* antigradient, double* minimu
     double min_y = y;
     double min_f = f(x, y);
     int minimum_found = 1;
-    while (Intensity(antigradient) > 0.00001 && i < 10000) {
+    while (Intensity(antigradient) > 0.001 && i < 10000) {
         printf("anti-gradiant:[%.6lf %.6lf]\n", antigradient[0], antigradient[1]);
         x = x + antigradient[0] * k;
         y = y + antigradient[1] * k;
