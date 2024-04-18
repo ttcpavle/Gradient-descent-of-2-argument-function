@@ -16,5 +16,5 @@ The second one works better (in my example) since it breaks from loop after smal
 it gets to minimum, the more precise is estimation. With constant step size an oscillation around minimum is likely to occur.
 
 This script will actually find stationary points that are candidates for local minimum. To find actual local minimum, Hessian matrix determinant
-should be calculated and cases examined. There are also special cases of functions where it is not differentable in some points or function is flat
-or undefined. And also, this script will only find the closest local minimum of given point.
+should be calculated and cases examined. There are also special cases of functions where function is flat
+or undefined. And also, this script will only find the closest local minimum from given point.
